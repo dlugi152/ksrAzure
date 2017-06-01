@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.ServiceModel.Web;
-using System.Text;
+﻿using System.ServiceModel;
 
 namespace WCFServiceWebRole1
 {
@@ -12,36 +6,18 @@ namespace WCFServiceWebRole1
     [ServiceContract]
     public interface IService1
     {
+        [OperationContract]
+        void Koduj(string nazwa, string tresc);
 
         [OperationContract]
-        string GetData(int value);
+        string Pobierz(string nazwa);
 
         [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
-
-        // TODO: dodaj tutaj operacje usługi
-    }
+        void AddUser(string login,string haslo);
 
 
-    // Użyj kontraktu danych, jak pokazano w poniższym przykładzie, aby dodać typy złożone do operacji usługi.
-    [DataContract]
-    public class CompositeType
-    {
-        bool boolValue = true;
-        string stringValue = "Hello ";
+        [OperationContract]
+        bool CheckUser(string login);
 
-        [DataMember]
-        public bool BoolValue
-        {
-            get { return boolValue; }
-            set { boolValue = value; }
-        }
-
-        [DataMember]
-        public string StringValue
-        {
-            get { return stringValue; }
-            set { stringValue = value; }
-        }
     }
 }

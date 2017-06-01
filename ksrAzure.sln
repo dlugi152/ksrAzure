@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "ksrAzure", "ksrAzure\ksrAzure.ccproj", "{ABB12017-C5F5-4017-AAFA-C87CCBE550E1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFServiceWebRole1", "WCFServiceWebRole1\WCFServiceWebRole1.csproj", "{230F571B-54E2-4CC7-B3F1-918B343A76BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tabela", "..\..\..\..\Downloads\Tabela\Tabela.csproj", "{7CEDC094-F14D-475C-B53E-AC9BC5763D82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerRole2", "WorkerRole2\WorkerRole2.csproj", "{7935C7CF-FA4D-4585-A182-D689129C7048}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{230F571B-54E2-4CC7-B3F1-918B343A76BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{230F571B-54E2-4CC7-B3F1-918B343A76BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{230F571B-54E2-4CC7-B3F1-918B343A76BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CEDC094-F14D-475C-B53E-AC9BC5763D82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CEDC094-F14D-475C-B53E-AC9BC5763D82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CEDC094-F14D-475C-B53E-AC9BC5763D82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CEDC094-F14D-475C-B53E-AC9BC5763D82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7935C7CF-FA4D-4585-A182-D689129C7048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7935C7CF-FA4D-4585-A182-D689129C7048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7935C7CF-FA4D-4585-A182-D689129C7048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7935C7CF-FA4D-4585-A182-D689129C7048}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
